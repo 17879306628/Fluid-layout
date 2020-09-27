@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    /* IE6、7 专有 */
+    *zoom: 1;
+}
+body {
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+    font-family: -apple-system, Helvetica , sans-serif;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    background-color: #ebebeb;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* 头部 header 模块 */
+header {
+    background-color: #fff;
+    width: 100%;
+    height: 70px;
+    
+}
+header ul li {
+    position: relative;
+    float: left;
+    width: 33.3333%;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+    box-sizing: border-box;
+}
+header ul li a {
+    
+    width: 100%;
+    color: #404c53;
+    font-size: 18px;
+}
+header ul li:nth-of-type(1)::after,
+header ul li:nth-of-type(2)::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 0;
+
+    width: 1px;
+    height: 20px;
+    background-color: #f2f2f2;
+    
+}
+header ul li:nth-of-type(3)::after  {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 5px;
+    width: 22px;
+    height: 22px;
+    background: url(../images/search.png) no-repeat;
+}
+header ul li:hover {
+    border-bottom: 1px solid #37ad78;
+}
+header ul li:hover a {
+    color: #37ad78;
+}
+/* 焦点图banner制作 */
+.banner {
+    width: 100%;
+}
+.banner a img {
+    width: 100%;
+    vertical-align: middle;
+}
+/* main主体内容制作 */
+.main {
+    width: 100%;
+}
+.main ul li {
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+    padding-left: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+.main ul li a p {
+    width: 100%;
+    font-size: 18px;
+    color: #404c53;
+    padding-top: 10px;
+    
+}
+.main ul li a span {
+    font-size: 12px;
+    color: #b2b2b2;
+    position: relative;
+}
+.main ul li a span i {
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background-color: #666;
+    margin-right: -10px;
+}
+.main ul li a span:nth-of-type(2) {
+    margin-left: 30px;
+}
+.main .xinxi {
+    position: relative;
+    width: 100%;
+    height: 62px;
+    
+    
+}
+.touxiang,
+.yuyin {
+    float: left;
+}
+.renshu {
+    float: right;
+}
+.main .xinxi .touxiang {
+    width: 50px;
+    height: 50px;
+    background: url(../images/football.png) no-repeat;
+    border-radius: 50%;
+    background-position: 0 -5px;
+    margin-top: 5px;
+}
+
+.main .xinxi .yuyin {
+    width: 173px;
+    height: 37px;
+    background: url(../images/xiaoxi.png) no-repeat;
+    margin-left: 15px;
+    margin-top: 25px;
+}
+.main .xinxi .renshu {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 73px;
+    height: 15px;
+    font-size: 12px;
+    color: #999;
+    
+}
+.main .xinxi .renshu::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 10px;
+    background: url(../images/erji.png) no-repeat;
+    background-size: 12px 10px;
+    margin-right: 5px;
+}
+/* footer 底部标签 */
+footer {
+    width: 100%;
+    height: 60px;
+    background-color: #f5f7f9;
+    text-align: center;
+    
+}
+footer ul li {
+    position: relative;
+    float: left;
+    width: 25%;
+    padding-top: 30px;
+}
+footer ul li a {
+    
+    font-size: 16px;
+    color: #c4c5c7;
+    
+}
+footer ul li:nth-child(1) a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 43%;
+    width: 20px;
+    height: 20px;
+    background: url(../upload/dial.png) no-repeat;
+}
+footer ul li:nth-child(2) a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 43%;
+    width: 20px;
+    height: 20px;
+    background: url(../upload/shouting.png) no-repeat;
+}
+footer ul li:nth-child(3) a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 43%;
+    width: 20px;
+    height: 20px;
+    background: url(../upload/faxian.png) no-repeat;
+}
+footer ul li:nth-child(4) a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 43%;
+    width: 20px;
+    height: 20px;
+    background: url(../upload/wode.png) no-repeat;
+}
+footer ul li:hover a {
+    color: #44b181;
+}
